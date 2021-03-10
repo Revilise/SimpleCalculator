@@ -18,3 +18,4 @@ G:\рпм\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cac
 G:\рпм\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 G:\рпм\Calculator\Calculator\obj\Debug\Calculator.exe
 G:\рпм\Calculator\Calculator\obj\Debug\Calculator.pdb
+G:\рпм\Calculator\Calculator\obj\Debug\Calculator.ErrorWindow.resources

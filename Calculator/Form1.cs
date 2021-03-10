@@ -27,7 +27,8 @@ namespace Calculator
                 History.Text += Results.Text + '\r' + "\n";
             } else
             {
-                Results.Text = "error";
+                ErrorWindow err = new ErrorWindow();
+                err.ShowDialog();
             }
         }
         private void multiply_Click(object sender, EventArgs e)
