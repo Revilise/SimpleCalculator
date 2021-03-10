@@ -41,6 +41,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.HistoryLabel = new System.Windows.Forms.Label();
             this.History = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.StrokesSum = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.num1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num2)).BeginInit();
             this.SuspendLayout();
@@ -135,6 +137,7 @@
             // 
             this.Results.Location = new System.Drawing.Point(289, 14);
             this.Results.Name = "Results";
+            this.Results.ReadOnly = true;
             this.Results.Size = new System.Drawing.Size(131, 20);
             this.Results.TabIndex = 14;
             // 
@@ -150,7 +153,7 @@
             // HistoryLabel
             // 
             this.HistoryLabel.AutoSize = true;
-            this.HistoryLabel.Location = new System.Drawing.Point(12, 40);
+            this.HistoryLabel.Location = new System.Drawing.Point(13, 40);
             this.HistoryLabel.Name = "HistoryLabel";
             this.HistoryLabel.Size = new System.Drawing.Size(50, 13);
             this.HistoryLabel.TabIndex = 16;
@@ -158,20 +161,40 @@
             // 
             // History
             // 
-            this.History.Location = new System.Drawing.Point(16, 58);
+            this.History.Location = new System.Drawing.Point(15, 58);
             this.History.Multiline = true;
             this.History.Name = "History";
             this.History.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.History.Size = new System.Drawing.Size(228, 68);
+            this.History.Size = new System.Drawing.Size(229, 68);
             this.History.TabIndex = 17;
             this.History.TextChanged += new System.EventHandler(this.History_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Строк всего: ";
+            // 
+            // StrokesSum
+            // 
+            this.StrokesSum.AutoSize = true;
+            this.StrokesSum.Location = new System.Drawing.Point(94, 136);
+            this.StrokesSum.Name = "StrokesSum";
+            this.StrokesSum.Size = new System.Drawing.Size(13, 13);
+            this.StrokesSum.TabIndex = 19;
+            this.StrokesSum.Text = "0";
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(435, 140);
+            this.ClientSize = new System.Drawing.Size(435, 156);
+            this.Controls.Add(this.StrokesSum);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.History);
             this.Controls.Add(this.HistoryLabel);
             this.Controls.Add(this.label1);
@@ -185,8 +208,10 @@
             this.Controls.Add(this.multiply);
             this.Controls.Add(this.divide);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
             ((System.ComponentModel.ISupportInitialize)(this.num1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num2)).EndInit();
@@ -208,6 +233,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label HistoryLabel;
         private System.Windows.Forms.TextBox History;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label StrokesSum;
     }
 }
 

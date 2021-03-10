@@ -24,7 +24,7 @@ namespace Calculator
             if (num2.Value != 0)
             {
                 Results.Text = (num1.Value / num2.Value).ToString();
-                History.Text += Results.Text + '\r' + "\n";
+                History.Text += Results.Text + "\r\n";
             } else
             {
                 ErrorWindow err = new ErrorWindow();
@@ -35,29 +35,33 @@ namespace Calculator
         {
             symb.Text = "х";
             Results.Text = (num1.Value * num2.Value).ToString();
-            History.Text += Results.Text +'\r' + "\n";
+            History.Text += Results.Text + "\r\n";
         }
         private void minus_Click(object sender, EventArgs e)
         {
             symb.Text = "-";
             Results.Text = (num1.Value - num2.Value).ToString();
-            History.Text += Results.Text + '\r' + "\n";
+            History.Text += Results.Text + "\r\n";
         }
         private void plus_Click(object sender, EventArgs e)
         {
             symb.Text = "+";
             Results.Text = (num1.Value + num2.Value).ToString();
-            History.Text += Results.Text + '\r' + "\n";
+            History.Text += Results.Text + "\r\n";
         }
 
         private void clear_Click(object sender, EventArgs e)
         {
-            
+            History.Clear();
         }
 
         private void History_TextChanged(object sender, EventArgs e)
         {
-
+            StrokesSum.Text = History.Lines.Length.ToString();
+            if (History.Lines.Length > 6)
+            {
+                // 
+            }
         }
     }
 }
