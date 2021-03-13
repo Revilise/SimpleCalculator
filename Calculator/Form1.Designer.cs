@@ -41,8 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.HistoryLabel = new System.Windows.Forms.Label();
             this.History = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.StrokesSum = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.num1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num2)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +50,7 @@
             this.divide.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.divide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.divide.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.divide.Location = new System.Drawing.Point(288, 58);
+            this.divide.Location = new System.Drawing.Point(288, 62);
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(29, 28);
             this.divide.TabIndex = 2;
@@ -65,7 +63,7 @@
             this.multiply.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.multiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multiply.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.multiply.Location = new System.Drawing.Point(322, 58);
+            this.multiply.Location = new System.Drawing.Point(322, 62);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(29, 28);
             this.multiply.TabIndex = 3;
@@ -78,7 +76,7 @@
             this.minus.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.minus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minus.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.minus.Location = new System.Drawing.Point(356, 58);
+            this.minus.Location = new System.Drawing.Point(356, 62);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(29, 28);
             this.minus.TabIndex = 4;
@@ -91,7 +89,7 @@
             this.plus.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plus.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.plus.Location = new System.Drawing.Point(391, 58);
+            this.plus.Location = new System.Drawing.Point(391, 62);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(29, 28);
             this.plus.TabIndex = 5;
@@ -103,7 +101,7 @@
             // 
             this.clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clear.Location = new System.Drawing.Point(288, 92);
+            this.clear.Location = new System.Drawing.Point(288, 106);
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(132, 34);
             this.clear.TabIndex = 6;
@@ -153,7 +151,7 @@
             // HistoryLabel
             // 
             this.HistoryLabel.AutoSize = true;
-            this.HistoryLabel.Location = new System.Drawing.Point(13, 40);
+            this.HistoryLabel.Location = new System.Drawing.Point(13, 42);
             this.HistoryLabel.Name = "HistoryLabel";
             this.HistoryLabel.Size = new System.Drawing.Size(50, 13);
             this.HistoryLabel.TabIndex = 16;
@@ -161,40 +159,20 @@
             // 
             // History
             // 
-            this.History.Location = new System.Drawing.Point(15, 58);
+            this.History.HideSelection = false;
+            this.History.Location = new System.Drawing.Point(15, 61);
             this.History.Multiline = true;
             this.History.Name = "History";
-            this.History.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.History.Size = new System.Drawing.Size(229, 68);
+            this.History.Size = new System.Drawing.Size(229, 79);
             this.History.TabIndex = 17;
             this.History.TextChanged += new System.EventHandler(this.History_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Строк всего: ";
-            // 
-            // StrokesSum
-            // 
-            this.StrokesSum.AutoSize = true;
-            this.StrokesSum.Location = new System.Drawing.Point(94, 136);
-            this.StrokesSum.Name = "StrokesSum";
-            this.StrokesSum.Size = new System.Drawing.Size(13, 13);
-            this.StrokesSum.TabIndex = 19;
-            this.StrokesSum.Text = "0";
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(435, 156);
-            this.Controls.Add(this.StrokesSum);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(435, 169);
             this.Controls.Add(this.History);
             this.Controls.Add(this.HistoryLabel);
             this.Controls.Add(this.label1);
@@ -233,8 +211,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label HistoryLabel;
         private System.Windows.Forms.TextBox History;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label StrokesSum;
     }
 }
 

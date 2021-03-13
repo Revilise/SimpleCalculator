@@ -18,7 +18,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void divide_Click(object sender, EventArgs e)
+    private void divide_Click(object sender, EventArgs e)
         {
             symb.Text = "/";
             if (num2.Value != 0)
@@ -57,10 +57,13 @@ namespace Calculator
 
         private void History_TextChanged(object sender, EventArgs e)
         {
-            StrokesSum.Text = History.Lines.Length.ToString();
-            if (History.Lines.Length > 6)
+            if (History.Lines.Length > 6) // когда в textbox больше чер 5 строк
             {
-                // 
+                var hist = History.Lines.ToList();
+                /* удалить первый элемент, тем самым 
+                   освободив 5-ю строку для записи результатов */
+                hist.RemoveAt(0); 
+                History.Lines = hist.ToArray(); 
             }
         }
     }

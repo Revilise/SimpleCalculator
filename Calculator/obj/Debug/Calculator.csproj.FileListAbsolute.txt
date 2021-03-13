@@ -19,3 +19,14 @@ G:\рпм\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.ca
 G:\рпм\Calculator\Calculator\obj\Debug\Calculator.exe
 G:\рпм\Calculator\Calculator\obj\Debug\Calculator.pdb
 G:\рпм\Calculator\Calculator\obj\Debug\Calculator.ErrorWindow.resources
+C:\Users\Мутя\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Мутя\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Мутя\Desktop\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.Calculator.resources
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.ErrorWindow.resources
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Мутя\Desktop\Calculator\Calculator\obj\Debug\Calculator.pdb
